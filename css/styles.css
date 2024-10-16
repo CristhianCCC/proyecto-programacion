@@ -1,0 +1,309 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+:root{
+    --grey: #393d42;
+    --secondarygrey: #adb5bd;
+    --green: #198754;
+    --yelow: #ffc107;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+/*Barra de navegacion*/
+
+
+
+.nav-content{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    line-height: 2rem;
+    width: 100%;
+    text-align: center;
+    }
+
+
+@media (min-width:768px){
+.nav-content{
+    display: flex;
+    flex-direction: row;
+    /*background-color: var(--grey);*/
+    
+    width: 100%;
+    /*background: rgba(0, 0, 0, 0.5); /*para añadir cierta transparencia al contenido*/
+    }
+    .navbar-content{
+        justify-content: flex-start;
+    }
+    
+    .list-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1.5em;
+        gap: 4rem;
+    }
+    
+}
+
+
+.list-content .title-content {
+    font-size: 2rem;
+}
+.list-content a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.list-content :hover {
+    background-color: var(--green);
+    padding: 0.2em;
+}
+
+/*boton*/
+
+.btn-content{
+    padding-left: 2rem;
+}
+
+.btn-content a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width:768px){
+    .btn-content{
+        display: flex;
+        align-items: center;
+        padding-left: 60em;
+    }
+}
+
+
+/*imagen y contenido header*/
+.header{
+    background-image: url(../img/img-header.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: brightness(0.8); /* Oscurece la imagen */
+}
+
+.headertitle-content{
+    text-align: center;
+    padding-top: 2rem;
+}
+@media (min-width:768px){
+    .headertitle-content{
+        padding: 15rem 5rem 20rem 5rem;
+        width: 30%;
+    }
+}
+
+
+.headertitle-content h1{
+    color: var(--yelow);
+    padding-bottom: 2rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+
+/*nosotros.html*/
+
+/*nosotros titulo texto*/
+
+@media (min-width:768px) {
+.header-content{
+    position: fixed;
+    width: 100%;
+    box-shadow: .1rem .2rem .3rem #333;
+}
+}
+
+.nav-container{
+    background-color: var(--grey);
+}
+
+
+
+/*why us content*/
+
+
+
+.whyus-content{
+    padding: 10rem 5rem 10rem 5rem;
+}
+
+
+@media(min-width:768px){
+    .img-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+    
+}
+
+.img-content img{
+    width: 100%;
+    height: 70%;
+    box-shadow: .1rem .2rem .3rem #333;
+}
+
+
+/*secondary section content*/
+.secondarysectioncontent{
+    background-color: var(--secondarygrey);
+    margin-bottom: 5rem;
+}
+
+.secondarysection-container h1{
+    text-align: center;
+    font-weight: 700;
+}
+.center-content p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+@media (min-width:768px){
+    .secondarysection-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .secondarysection-container h1{
+        text-transform: uppercase;
+        padding: 2rem;
+        
+    }
+}
+
+/*footer img content*/
+
+.footer-img{
+    background-image: url(../img/footer-img.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.footer-img-content h1{
+    font-size: 1.5rem;
+}
+
+.footer-img-content{
+    display: flex;
+    padding-top: 15em;
+    justify-content: center;
+}
+
+.footer-img-content h1{
+    color: white;
+    background-color: var(--grey);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 4rem;
+}
+
+
+/*catalogo*/
+
+.card-container img{
+    width: 100%;
+    height: 90%;
+}
+
+
+.card-container{
+    padding: 5em;
+}
+
+
+/*formulario*/
+
+
+.formulario{
+    padding: 5rem;
+    width: 50%;
+    box-shadow: .1rem .2rem .3rem #333;
+}
+
+p {
+    font-size: 1.4rem;
+    color: var(--grey);
+    margin: 2rem 0 0 0;
+}
+
+legend {
+    font-size: 2rem;
+    color: var(--grey);
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+}
+input, 
+textarea,
+select {
+    padding: .8rem;
+    display: block;
+    width: 100%;
+    background-color: white;
+    border: 1px solid var(--grey);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+textarea {
+    height: 20rem;
+}
+
+.forma-contacto {
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input[type="radio"] {
+    margin: 0;
+    width: auto;
+    padding-top: 4rem;
+}
+
+.input{
+    color: white;
+    margin-top: 4rem;
+    background-color: var(--green);
+}
+
+.form-container{
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+}
