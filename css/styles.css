@@ -1,8 +1,5 @@
 
 *{
-    padding: 0;
-    margin: 0;
-    font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
@@ -24,6 +21,11 @@ a{
 
 li{
     list-style: none;
+}
+
+
+p {
+    color: var(--grey);
 }
 
 /*Barra de navegacion*/
@@ -247,27 +249,11 @@ li{
 
 
 .formulario{
-    padding: 5rem;
-    width: 50%;
     box-shadow: .1rem .2rem .3rem #333;
 }
 
-p {
-    font-size: 1.4rem;
-    color: var(--grey);
-    margin: 2rem 0 0 0;
-}
 
-legend {
-    font-size: 2rem;
-    color: var(--grey);
-}
 
-label {
-    font-weight: bold;
-    text-transform: uppercase;
-    display: block;
-}
 input, 
 textarea,
 select {
@@ -280,30 +266,8 @@ select {
     margin-bottom: 2rem;
 }
 
-textarea {
+.textarea {
     height: 20rem;
 }
 
-.forma-contacto {
-    max-width: 30rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-input[type="radio"] {
-    margin: 0;
-    width: auto;
-    padding-top: 4rem;
-}
 
-.input{
-    color: white;
-    margin-top: 4rem;
-    background-color: var(--green);
-}
-
-.form-container{
-    margin: 4rem;
-    display: flex;
-    justify-content: center;
-}
