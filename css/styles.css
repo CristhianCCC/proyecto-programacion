@@ -15,8 +15,9 @@
 
 
 a{
-    text-decoration: none;
-    color: white;
+    text-decoration: none !important;
+    color: white !important;
+    font-weight: 600 !important;
 }
 
 li{
@@ -31,51 +32,10 @@ p {
 /*Barra de navegacion*/
 
 
-
-.nav-content{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;    
-    align-items: center;
-    line-height: 2rem;
-    width: 100%;
-    text-align: center;
-    }
-
-
 @media (min-width:768px){
-.nav-content{
-    display: flex;
-    flex-direction: row;
-    /*background-color: var(--grey);*/
-    
-    width: 100%;
-    /*background: rgba(0, 0, 0, 0.5); /*para añadir cierta transparencia al contenido*/
-    }
-    .navbar-content{
-        justify-content: flex-start;
-    }
-    
     .list-content{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 1.5em;
         gap: 4rem;
     }
-    
-}
-
-
-.list-content .title-content {
-    font-size: 2rem;
-}
-.list-content a{
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
 }
 
 .list-content :hover {
@@ -85,22 +45,6 @@ p {
 
 /*boton*/
 
-.btn-content{
-    padding-left: 2rem;
-}
-
-.btn-content a{
-    text-decoration: none;
-    color: white;
-}
-
-@media (min-width:768px){
-    .btn-content{
-        display: flex;
-        align-items: center;
-        padding-left: 60em;
-    }
-}
 
 
 /*imagen y contenido header*/
@@ -113,10 +57,7 @@ p {
     filter: brightness(0.8); /* Oscurece la imagen */
 }
 
-.headertitle-content{
-    text-align: center;
-    padding-top: 2rem;
-}
+
 @media (min-width:768px){
     .headertitle-content{
         padding: 15rem 5rem 20rem 5rem;
@@ -182,26 +123,8 @@ p {
     margin-bottom: 5rem;
 }
 
-.secondarysection-container h1{
-    text-align: center;
-    font-weight: 700;
-}
 .center-content p{
     font-size: 1.2rem;
-    text-align: center;
-}
-
-@media (min-width:768px){
-    .secondarysection-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .secondarysection-container h1{
-        text-transform: uppercase;
-        padding: 2rem;
-        
-    }
 }
 
 /*footer img content*/
@@ -214,14 +137,8 @@ p {
     background-position: center center;
 }
 
-.footer-img-content h1{
-    font-size: 1.5rem;
-}
-
 .footer-img-content{
-    display: flex;
     padding-top: 15em;
-    justify-content: center;
 }
 
 .footer-img-content h1{
@@ -236,7 +153,7 @@ p {
 
 .card-container img{
     width: 100%;
-    height: 90%;
+    height: 100%;
 }
 
 
