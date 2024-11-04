@@ -165,26 +165,34 @@ p {
 /*formulario*/
 
 
-.formulario{
-    box-shadow: .1rem .2rem .3rem #333;
+
+.img-contact{
+    width: 3em;
 }
 
 
+.contact-form{
+    text-align: center;
+}
+@media (min-width: 992px){
+.body-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "col1 col2";
+}
 
-input, 
-textarea,
-select {
-    padding: .8rem;
-    display: block;
+.label-content{
+    padding: 5em;
+    gap: 2rem;
+    grid-area: col2;
+}
+
+.contact-form{
+    grid-area: col1;
+} }
+
+.text-area{
     width: 100%;
-    background-color: white;
-    border: 1px solid var(--grey);
-    border-radius: 1rem;
-    margin-bottom: 2rem;
+    height: 100%;
 }
-
-.textarea {
-    height: 20rem;
-}
-
-
